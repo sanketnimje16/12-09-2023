@@ -1,0 +1,7 @@
+div#box1{
+    height: 300px;
+    width: 300px;
+    background: red;
+    display: inline-block;
+    margin:3px;
+}

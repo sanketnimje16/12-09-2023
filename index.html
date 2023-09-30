@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js Conditional Statement</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <style>
+            div#box2{
+                width: 300px;
+                height: 300px;
+                background: green;
+                display:inline-block;
+                margin:3px;
+                
+                
+            }
+
+        </style>
+        <script src="./js/script.js"></script>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3" style="width:300px;height:300px;background:blue;display: inline-block;margin:3px;"></div>
+        
+        <script>
+            var time = window.prompt("Please enter the time");
+            alert("before type conversion "+typeof time);
+
+            time = (parseInt(time));
+            alert("after type conversion "+typeof time)
+
+                if(time >= 6 && time <= 12){
+                    window.alert("Good Morning");
+                }else if(time >12 && time <= 15){
+                    window.alert("Good Afternoon");
+                }else if(time >15 && time <=21){
+                    window.alert("Good Evening");
+                }else{
+                    alert("Good Night");
+                }
+
+                var x = window.confirm("Are You 18+");
+                // alert(typeof x);
+                if(x === true){
+                    alert("you can vote")
+                }else{
+                    alert("you can't vote")
+                }
+
+        </script>
+    </body>
+</html>
